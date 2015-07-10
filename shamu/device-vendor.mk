@@ -17,13 +17,18 @@
 $(call inherit-product, vendor/motorola/shamu/shamu-vendor-blobs.mk)
 
 # Prebuilt APKs
+
 PRODUCT_PACKAGES += \
     atfwd \
+    DMAgent \
+    DMConfigUpdate \
+    HiddenMenu \
     ims \
     RCSBootstraputil \
     RcsImsBootstraputil \
     RcsService \
     TimeService \
+    UiccWatchdog \
     VZWAPNLib
 
 # Prebuilt jars
@@ -42,7 +47,15 @@ PRODUCT_PACKAGES += \
     AppDirectedSMSProxy \
     BuaContactAdapter \
     CNEService \
+    ConnMO \
+    CQATest \
+    DCMO \
+    DiagMon \
+    DMservice \
+    LifetimeData \
     MotoSignatureApp \
+    SmartcardService \
+    SprintDM \
     TriggerEnroll \
     TriggerTrainingService \
     VZWAPNService
